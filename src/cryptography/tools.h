@@ -61,6 +61,7 @@ boost::multiprecision::uint128_t HashModulo(const std::string& message,
 // Inverse calculates multiplicative inverse for a given number num by modulo
 // mod. The algotithm uses Extended Euclidean algorithm for calculating modular
 // multiplicative inverse.
+// https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm
 boost::multiprecision::uint128_t Inverse(
     const boost::multiprecision::uint128_t& num,
     const boost::multiprecision::uint128_t& mod);
